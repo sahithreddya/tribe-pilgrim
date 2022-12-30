@@ -11,6 +11,7 @@ user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
 config = Config()
 config.browser_user_agent = user_agent
 
+# openai classification function 
 def classify(text):
     openai.api_key = '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'
 
@@ -31,6 +32,7 @@ def classify(text):
         # text= text.str.replace('\n','',regex = True)
         # text = text.str.replace(r'[^\w\s]+', '',regex = True)
 
+# continent call-- data extraction -- summary extraction[newspaper api] -- news classification
 
 class ContinentCall:
     def __init__(self, ud):
