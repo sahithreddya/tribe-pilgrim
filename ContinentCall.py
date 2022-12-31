@@ -13,7 +13,7 @@ config.browser_user_agent = user_agent
 
 # openai classification function 
 def classify(text):
-    openai.api_key = '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'
+    openai.api_key = 'xxx'
 
     class_list = []
     for x in range(len(text)):
@@ -41,7 +41,7 @@ class ContinentCall:
         # Date functions to use in all the query parameters
         dt_today = date.today()
         dt_week = dt_today - timedelta(7)
-        newsapi = NewsApiClient('6e14aba1dfc84a5094aaed459344a228')
+        newsapi = NewsApiClient('xxx') 
         call = newsapi.get_everything(q = continent,
                                     sources = 'wired, vice-news, techcrunch, financial-post,the-wall-street-journal',
                                     from_param = dt_week.strftime('%Y-%m-%d'), 
