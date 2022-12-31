@@ -27,16 +27,15 @@ def classify(text):
         presence_penalty=0, best_of = 9
         ) 
         class_list.append(response['choices'][0].text)
-        return class_list
-        # text = class_list
-        # text= text.str.replace('\n','',regex = True)
-        # text = text.str.replace(r'[^\w\s]+', '',regex = True)
+        # text= class_list[0].str.replace('\n','',regex = True)
+        # text = class_list[0].str.replace(r'[^\w\s]+', '',regex = True)
+        return class_list 
 
 # continent call-- data extraction -- summary extraction[newspaper api] -- news classification
 
 class ContinentCall:
     def __init__(self, ud):
-        print('s')
+        print('s') 
         print(ud)
     def region(temp,continent):
         # Date functions to use in all the query parameters
