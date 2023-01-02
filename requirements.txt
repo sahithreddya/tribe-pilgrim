@@ -10,3 +10,5 @@ MarkupSafe==2.1.1
 pytz==2022.1
 six==1.16.0
 Werkzeug==2.2.1
+openai==0.25.0
+newspaper3k==0.2.8
